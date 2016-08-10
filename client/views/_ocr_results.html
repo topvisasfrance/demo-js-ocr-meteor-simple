@@ -1,0 +1,15 @@
+<template name="_ocr_results">
+   <div class="row">
+      <div class="col-md-7 col-md-push-5">
+         {{#if showLoading}}
+            {{> _loading}}
+         {{else}}
+            {{> _text_viewer}}
+         {{/if}}
+      </div>
+
+      <div class="col-md-5 col-md-pull-7">
+         {{> _image_viewer}}
+      </div>
+   </div>
+</template>
